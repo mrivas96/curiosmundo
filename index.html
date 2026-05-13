@@ -1,130 +1,664 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CuriosMundo - Noticias y curiosidades sobre ciencia, historia, naturaleza y tecnología en español.">
+<meta name="keywords" content="curiosidades, noticias, ciencia, historia, naturaleza, tecnología, viral, España">
+<meta name="author" content="CuriosMundo">
+<meta property="og:title" content="CuriosMundo - Noticias y Curiosidades">
+<meta property="og:description" content="Descubre cada día algo nuevo sobre ciencia, historia, naturaleza y tecnología.">
+<meta property="og:type" content="website">
+<title>CuriosMundo - Noticias y Curiosidades</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Google AdSense - PEGA AQUÍ TU CÓDIGO DE ADSENSE CUANDO TE LO DEN -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXX" crossorigin="anonymous"></script> -->
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --negro:#0a0a0a;
+    --blanco:#fafafa;
+    --rojo:#c0392b;
+    --rojo-claro:#e74c3c;
+    --gris-claro:#f0eeea;
+    --gris-medio:#888;
+    --gris-texto:#333;
+    --borde:#ddd;
+  }
+  body{font-family:'Source Sans 3',sans-serif;background:var(--blanco);color:var(--negro);font-size:16px;line-height:1.6}
+  a{text-decoration:none;color:inherit}
+  .contenedor{max-width:1100px;margin:0 auto;padding:0 20px}
 
-📍 España · Tu portal de curiosidades diarias
-CuriosMundo
-NOTICIAS · CURIOSIDADES · CIENCIA · VIRAL
-📢 Anuncio Google AdSense (728×90) — se activa tras aprobación
-INICIO
-CIENCIA
-HISTORIA
-TECNOLOGÍA
-NATURALEZA
-VIRAL
-CONTACTO
-PRIVACIDAD
-AHORA
-Científicos descubren que las pulgas saltan 200 veces su altura · El 78% de españoles desconoce el origen de "madrugada" · Un pueblo de Jaén lleva 500 años con el mismo oficio
-DESTACADO
-CIENCIA
-El misterio de por qué los flamencos duermen con una sola pata finalmente resuelto
-Investigadores de la Universidad de Georgia han descubierto que esta postura no es para mantener el calor corporal, sino algo relacionado con su sistema nervioso que te sorprenderá.
-✍️ Ana Martínez
+  /* TOPBAR */
+  .topbar{background:var(--negro);color:white;font-size:12px;padding:6px 20px;display:flex;justify-content:space-between;align-items:center}
+  .topbar span{opacity:.7}
 
-📅 13 may 2026
+  /* HEADER */
+  header{border-bottom:3px solid var(--negro);padding:16px 20px 0}
+  .header-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+  .logo{font-family:'Playfair Display',serif;font-size:36px;font-weight:900;letter-spacing:-1px}
+  .logo span{color:var(--rojo)}
+  .header-tagline{font-size:11px;color:var(--gris-medio);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
+  .header-ad{background:var(--gris-claro);border:1px dashed #ccc;width:728px;height:90px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#aaa;border-radius:4px;max-width:100%}
+  nav{display:flex;gap:0;border-top:1px solid var(--borde);flex-wrap:wrap}
+  nav a{padding:10px 16px;font-size:13px;font-weight:600;letter-spacing:.3px;text-transform:uppercase;color:var(--gris-texto);border-bottom:3px solid transparent;transition:all .2s}
+  nav a:hover,nav a.activo{color:var(--rojo);border-bottom-color:var(--rojo)}
 
-👁️ 12.4K lecturas
-🌿
-NATURALEZA
-El árbol que lleva más de 9.500 años vivo en Suecia y nadie lo sabía
-12 may 2026 · 6.2K lecturas
-🚀
-TECNOLOGÍA
-La IA ya puede predecir tu estado de ánimo con solo 3 segundos de tu voz
-11 may 2026 · 9.8K lecturas
-🏛️
-HISTORIA
-10 palabras españolas que usamos a diario y vienen del árabe
-10 may 2026 · 15.1K lecturas
-🧠
-CIENCIA
-Por qué tu cerebro olvida los sueños a los 10 minutos de despertar
-9 may 2026 · 8.3K lecturas
-📢 Anuncio Google AdSense (728×90) — Banner de contenido
-Más artículos
-🌙
-ASTRONOMÍA
-Las 5 curiosidades sobre la Luna que te dejarán sin palabras
-8 may · 5.7K lecturas
-🐙
-NATURALEZA
-El pulpo tiene tres corazones y sangre azul: la guía definitiva
-7 may · 11.2K lecturas
-⚡
-HISTORIA
-Cómo vivía un español hace exactamente 200 años: comparativa sorprendente
-6 may · 7.9K lecturas
-Nuevos artículos
-💡
-VIRAL
-8 inventos que cambiaron el mundo y nacieron por accidente
-16 may 2026 · 14.2K lecturas
-🏆
-VIRAL
-Los récords más absurdos del mundo que son completamente reales
-17 may 2026 · 18.3K lecturas
-🌊
-NATURALEZA
-El 95% del océano sigue sin explorar: qué se esconde en las profundidades
-15 may 2026 · 11.8K lecturas
-🏛️
-HISTORIA
-7 curiosidades de España que la mayoría de españoles desconoce
-14 may 2026 · 13.4K lecturas
-🧠
-CIENCIA
-10 cosas increíbles que hace tu cerebro sin que te des cuenta
-15 may · 9.6K lecturas
-🐬
-CIENCIA
-Los animales que duermen de formas que no te puedes imaginar
-14 may · 7.2K lecturas
-💧
-CIENCIA
-El agua es más extraña de lo que crees: 6 propiedades que desafían la lógica
-16 may · 6.8K lecturas
-Explorar por categoría
-🔬
-CIENCIA
-🏛️
-HISTORIA
-🌿
-NATURALEZA
-💻
-TECNOLOGÍA
-🔥
-VIRAL
-ADSENSE 300×250
-📢 Anuncio sidebar principal
-🔥 Lo más leído
-01
-10 palabras españolas que vienen del árabe
-HISTORIA · 15.1K
-02
-El misterio del flamenco durmiendo con una pata
-CIENCIA · 12.4K
-03
-El pulpo tiene tres corazones y sangre azul
-NATURALEZA · 11.2K
-04
-La IA predice tu estado de ánimo con tu voz
-TECNOLOGÍA · 9.8K
-05
-Cómo vivía un español hace 200 años
-HISTORIA · 7.9K
-📬 Newsletter gratis
-Recibe las mejores curiosidades cada mañana
-Suscribirme →
-ADSENSE 300×200
-📢 Segundo anuncio sidebar
-CuriosMundo
-El portal de noticias y curiosidades más entretenido en español. Descubre cada día algo nuevo sobre ciencia, historia, naturaleza y tecnología.
-SECCIONES
-Ciencia
-Historia
-Tecnología
-Naturaleza
-Viral
-EL SITIO
-Contacto
-Política de privacidad
-© 2026 CuriosMundo · Todos los derechos reservados
-Hecho con ❤️ en España
+  /* BREAKING */
+  .breaking{background:var(--rojo);color:white;padding:8px 20px;font-size:13px;display:flex;align-items:center;gap:12px;overflow:hidden}
+  .breaking strong{background:white;color:var(--rojo);padding:2px 8px;font-size:11px;font-weight:700;letter-spacing:1px;white-space:nowrap}
+
+  /* GRID PRINCIPAL */
+  .main-grid{display:grid;grid-template-columns:1fr 300px;gap:24px;padding:24px 0}
+  @media(max-width:768px){.main-grid{grid-template-columns:1fr}.sidebar{display:none}}
+
+  /* HÉROE */
+  .hero-article{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px;padding-bottom:24px;border-bottom:1px solid var(--borde)}
+  @media(max-width:600px){.hero-article{grid-template-columns:1fr}}
+  .hero-img{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);height:280px;border-radius:6px;display:flex;align-items:flex-end;padding:16px;position:relative;overflow:hidden}
+  .hero-img::before{content:'🌌';font-size:80px;position:absolute;top:20px;left:50%;transform:translateX(-50%);opacity:.3}
+  .hero-img-label{background:var(--rojo);color:white;font-size:10px;font-weight:700;letter-spacing:1.5px;padding:3px 8px;text-transform:uppercase;border-radius:3px}
+  .hero-text{display:flex;flex-direction:column;justify-content:center}
+  .categoria-tag{display:inline-block;background:var(--rojo);color:white;font-size:10px;font-weight:700;letter-spacing:1.5px;padding:3px 10px;text-transform:uppercase;border-radius:3px;margin-bottom:10px;width:fit-content}
+  .hero-titulo{font-family:'Playfair Display',serif;font-size:26px;font-weight:700;line-height:1.2;margin-bottom:12px}
+  .hero-titulo:hover{color:var(--rojo)}
+  .hero-excerpt{font-size:14px;color:#555;line-height:1.6;margin-bottom:12px}
+  .meta{font-size:12px;color:var(--gris-medio);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .dot{width:3px;height:3px;background:var(--gris-medio);border-radius:50%;display:inline-block}
+
+  /* GRID ARTÍCULOS */
+  .articulos-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px}
+  @media(max-width:500px){.articulos-grid{grid-template-columns:1fr}}
+  .articulo-card{border:1px solid var(--borde);border-radius:6px;overflow:hidden;transition:box-shadow .2s;cursor:pointer}
+  .articulo-card:hover{box-shadow:0 4px 16px rgba(0,0,0,.1)}
+  .card-img{height:140px;display:flex;align-items:center;justify-content:center;font-size:48px}
+  .card-body{padding:12px}
+  .card-cat{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--rojo);margin-bottom:5px}
+  .card-titulo{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;line-height:1.3;margin-bottom:8px}
+  .card-titulo:hover{color:var(--rojo)}
+  .card-meta{font-size:11px;color:var(--gris-medio)}
+
+  /* LISTA */
+  .lista-item{display:grid;grid-template-columns:80px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--borde);cursor:pointer}
+  .lista-item:last-child{border-bottom:none}
+  .lista-img{height:65px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-size:26px}
+  .lista-cat{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--rojo);margin-bottom:3px}
+  .lista-titulo{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;line-height:1.3}
+  .lista-titulo:hover{color:var(--rojo)}
+  .lista-meta{font-size:11px;color:var(--gris-medio);margin-top:3px}
+
+  /* SIDEBAR */
+  .sidebar-titulo{font-family:'Playfair Display',serif;font-size:16px;font-weight:700;border-bottom:2px solid var(--negro);padding-bottom:8px;margin-bottom:12px}
+  .ad-box{background:var(--gris-claro);border:1px dashed #ccc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#bbb;font-size:12px;border-radius:4px;margin-bottom:24px}
+  .trending-item{display:flex;gap:10px;align-items:flex-start;padding:8px 0;border-bottom:1px solid var(--borde);cursor:pointer}
+  .trending-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:900;color:var(--gris-claro);line-height:1;min-width:26px}
+  .trending-titulo{font-size:13px;font-weight:600;line-height:1.3}
+  .trending-titulo:hover{color:var(--rojo)}
+  .trending-cat{font-size:10px;color:var(--gris-medio);text-transform:uppercase}
+  .newsletter{background:var(--negro);color:white;padding:16px;border-radius:6px;margin-bottom:24px}
+  .newsletter h4{font-family:'Playfair Display',serif;font-size:15px;margin-bottom:4px}
+  .newsletter p{font-size:12px;opacity:.7;margin-bottom:12px}
+  .newsletter input{width:100%;padding:8px 10px;border:none;border-radius:4px;font-size:13px;margin-bottom:8px}
+  .newsletter button{width:100%;padding:9px;background:var(--rojo);color:white;border:none;border-radius:4px;font-size:13px;font-weight:600;cursor:pointer}
+
+  /* CATEGORÍAS */
+  .cats-section{border-top:2px solid var(--negro);padding:24px 0}
+  .cats-titulo{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:16px}
+  .cats-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+  @media(max-width:600px){.cats-grid{grid-template-columns:repeat(3,1fr)}}
+  .cat-pill{background:var(--gris-claro);padding:12px 8px;text-align:center;border-radius:6px;cursor:pointer;transition:all .2s;border:1px solid transparent}
+  .cat-pill:hover{background:var(--rojo);color:white}
+  .cat-pill .emoji{font-size:22px;display:block;margin-bottom:4px}
+  .cat-pill span{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px}
+
+  /* FOOTER */
+  footer{background:var(--negro);color:white;padding:32px 20px 16px;margin-top:32px}
+  .footer-grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:24px}
+  @media(max-width:600px){.footer-grid{grid-template-columns:1fr}}
+  .footer-logo{font-family:'Playfair Display',serif;font-size:24px;font-weight:900;margin-bottom:8px}
+  .footer-logo span{color:var(--rojo)}
+  .footer-desc{font-size:13px;opacity:.6;line-height:1.6}
+  .footer-col h5{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;opacity:.5;margin-bottom:12px}
+  .footer-col a{display:block;font-size:13px;opacity:.7;margin-bottom:6px}
+  .footer-col a:hover{opacity:1;color:var(--rojo-claro)}
+  .footer-bottom{max-width:1100px;margin:0 auto;border-top:1px solid rgba(255,255,255,.1);padding-top:16px;display:flex;justify-content:space-between;font-size:12px;opacity:.4;flex-wrap:wrap;gap:8px}
+
+  /* PÁGINAS INTERNAS */
+  .pagina{display:none;padding:32px 0}
+  .pagina.activa{display:block}
+  .pagina h1{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;margin-bottom:8px}
+  .pagina .subtitulo{color:var(--gris-medio);font-size:14px;margin-bottom:32px;border-bottom:1px solid var(--borde);padding-bottom:16px}
+  .pagina p{margin-bottom:16px;color:#444;line-height:1.8}
+  .pagina h2{font-family:'Playfair Display',serif;font-size:20px;margin:24px 0 12px}
+  .articulo-completo{max-width:720px}
+  #inicio{display:block}
+
+  /* AD INLINE */
+  .ad-inline{background:var(--gris-claro);border:1px dashed #ccc;height:90px;display:flex;align-items:center;justify-content:center;font-size:12px;color:#aaa;border-radius:4px;margin:24px 0}
+</style>
+</head>
+<body>
+
+<div class="topbar contenedor" style="max-width:100%;padding:6px 20px">
+  <span id="fecha-hoy"></span>
+  <span>📍 España · Tu portal de curiosidades diarias</span>
+</div>
+
+<header>
+  <div class="contenedor">
+    <div class="header-top">
+      <div>
+        <div class="logo">Curios<span>Mundo</span></div>
+        <div class="header-tagline">Noticias · Curiosidades · Ciencia · Viral</div>
+      </div>
+      <div class="header-ad">
+        <!-- ADSENSE LEADERBOARD 728x90 -->
+        📢 Anuncio Google AdSense (728×90) — se activa tras aprobación
+      </div>
+    </div>
+    <nav>
+      <a href="#" class="activo" onclick="mostrar('inicio',this)">Inicio</a>
+      <a href="#" onclick="mostrar('ciencia',this)">Ciencia</a>
+      <a href="#" onclick="mostrar('historia',this)">Historia</a>
+      <a href="#" onclick="mostrar('tecnologia',this)">Tecnología</a>
+      <a href="#" onclick="mostrar('naturaleza',this)">Naturaleza</a>
+      <a href="#" onclick="mostrar('viral',this)">Viral</a>
+      <a href="#" onclick="mostrar('contacto',this)">Contacto</a>
+      <a href="#" onclick="mostrar('privacidad',this)">Privacidad</a>
+    </nav>
+  </div>
+</header>
+
+<!-- PÁGINAS -->
+<div class="contenedor">
+
+  <!-- INICIO -->
+  <div id="inicio" class="pagina activa">
+    <div class="breaking" style="margin:0 -20px">
+      <strong>AHORA</strong>
+      <span>Científicos descubren que las pulgas saltan 200 veces su altura · El 78% de españoles desconoce el origen de "madrugada" · Un pueblo de Jaén lleva 500 años con el mismo oficio</span>
+    </div>
+    <div class="main-grid">
+      <main>
+        <div class="hero-article">
+          <div class="hero-img"><div class="hero-img-label">DESTACADO</div></div>
+          <div class="hero-text">
+            <span class="categoria-tag">Ciencia</span>
+            <h1 class="hero-titulo" onclick="mostrarArticulo('flamingo')">El misterio de por qué los flamencos duermen con una sola pata finalmente resuelto</h1>
+            <p class="hero-excerpt">Investigadores de la Universidad de Georgia han descubierto que esta postura no es para mantener el calor corporal, sino algo relacionado con su sistema nervioso que te sorprenderá.</p>
+            <div class="meta"><span>✍️ Ana Martínez</span><span class="dot"></span><span>📅 13 may 2026</span><span class="dot"></span><span>👁️ 12.4K lecturas</span></div>
+          </div>
+        </div>
+        <div class="articulos-grid">
+          <div class="articulo-card" onclick="mostrarArticulo('arbol')">
+            <div class="card-img" style="background:#d5f5e3">🌿</div>
+            <div class="card-body"><div class="card-cat">Naturaleza</div><div class="card-titulo">El árbol que lleva más de 9.500 años vivo en Suecia y nadie lo sabía</div><div class="card-meta">12 may 2026 · 6.2K lecturas</div></div>
+          </div>
+          <div class="articulo-card" onclick="mostrarArticulo('ia-voz')">
+            <div class="card-img" style="background:#d6eaf8">🚀</div>
+            <div class="card-body"><div class="card-cat">Tecnología</div><div class="card-titulo">La IA ya puede predecir tu estado de ánimo con solo 3 segundos de tu voz</div><div class="card-meta">11 may 2026 · 9.8K lecturas</div></div>
+          </div>
+          <div class="articulo-card" onclick="mostrarArticulo('palabras-arabes')">
+            <div class="card-img" style="background:#fdebd0">🏛️</div>
+            <div class="card-body"><div class="card-cat">Historia</div><div class="card-titulo">10 palabras españolas que usamos a diario y vienen del árabe</div><div class="card-meta">10 may 2026 · 15.1K lecturas</div></div>
+          </div>
+          <div class="articulo-card" onclick="mostrarArticulo('suenos')">
+            <div class="card-img" style="background:#e8daef">🧠</div>
+            <div class="card-body"><div class="card-cat">Ciencia</div><div class="card-titulo">Por qué tu cerebro olvida los sueños a los 10 minutos de despertar</div><div class="card-meta">9 may 2026 · 8.3K lecturas</div></div>
+          </div>
+        </div>
+        <div class="ad-inline">📢 Anuncio Google AdSense (728×90) — Banner de contenido</div>
+        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;border-bottom:2px solid var(--negro);padding-bottom:8px;margin-bottom:16px">Más artículos</div>
+        <div class="lista-item" onclick="mostrarArticulo('luna')"><div class="lista-img" style="background:#fef9e7">🌙</div><div><div class="lista-cat">Astronomía</div><div class="lista-titulo">Las 5 curiosidades sobre la Luna que te dejarán sin palabras</div><div class="lista-meta">8 may · 5.7K lecturas</div></div></div>
+        <div class="lista-item" onclick="mostrarArticulo('pulpo')"><div class="lista-img" style="background:#e8f8f5">🐙</div><div><div class="lista-cat">Naturaleza</div><div class="lista-titulo">El pulpo tiene tres corazones y sangre azul: la guía definitiva</div><div class="lista-meta">7 may · 11.2K lecturas</div></div></div>
+        <div class="lista-item" onclick="mostrarArticulo('espana-1826')"><div class="lista-img" style="background:#fdedec">⚡</div><div><div class="lista-cat">Historia</div><div class="lista-titulo">Cómo vivía un español hace exactamente 200 años: comparativa sorprendente</div><div class="lista-meta">6 may · 7.9K lecturas</div></div></div>
+        
+        <div style="font-family:'Playfair Display',serif;font-size:18px;font-weight:700;border-bottom:2px solid var(--negro);padding-bottom:8px;margin:24px 0 16px">Nuevos artículos</div>
+        <div class="articulos-grid">
+          <div class="articulo-card" onclick="mostrarArticulo('inventos-accidente')">
+            <div class="card-img" style="background:#fef9e7">💡</div>
+            <div class="card-body"><div class="card-cat">Viral</div><div class="card-titulo">8 inventos que cambiaron el mundo y nacieron por accidente</div><div class="card-meta">16 may 2026 · 14.2K lecturas</div></div>
+          </div>
+          <div class="articulo-card" onclick="mostrarArticulo('records-mundo')">
+            <div class="card-img" style="background:#fdebd0">🏆</div>
+            <div class="card-body"><div class="card-cat">Viral</div><div class="card-titulo">Los récords más absurdos del mundo que son completamente reales</div><div class="card-meta">17 may 2026 · 18.3K lecturas</div></div>
+          </div>
+          <div class="articulo-card" onclick="mostrarArticulo('oceano-misterios')">
+            <div class="card-img" style="background:#d6eaf8">🌊</div>
+            <div class="card-body"><div class="card-cat">Naturaleza</div><div class="card-titulo">El 95% del océano sigue sin explorar: qué se esconde en las profundidades</div><div class="card-meta">15 may 2026 · 11.8K lecturas</div></div>
+          </div>
+          <div class="articulo-card" onclick="mostrarArticulo('curiosidades-espana')">
+            <div class="card-img" style="background:#fdebd0">🏛️</div>
+            <div class="card-body"><div class="card-cat">Historia</div><div class="card-titulo">7 curiosidades de España que la mayoría de españoles desconoce</div><div class="card-meta">14 may 2026 · 13.4K lecturas</div></div>
+          </div>
+        </div>
+        <div class="lista-item" onclick="mostrarArticulo('cerebro-increible')"><div class="lista-img" style="background:#e8daef">🧠</div><div><div class="lista-cat">Ciencia</div><div class="lista-titulo">10 cosas increíbles que hace tu cerebro sin que te des cuenta</div><div class="lista-meta">15 may · 9.6K lecturas</div></div></div>
+        <div class="lista-item" onclick="mostrarArticulo('animales-dormidos')"><div class="lista-img" style="background:#d6eaf8">🐬</div><div><div class="lista-cat">Ciencia</div><div class="lista-titulo">Los animales que duermen de formas que no te puedes imaginar</div><div class="lista-meta">14 may · 7.2K lecturas</div></div></div>
+        <div class="lista-item" onclick="mostrarArticulo('agua-curiosidades')"><div class="lista-img" style="background:#d6eaf8">💧</div><div><div class="lista-cat">Ciencia</div><div class="lista-titulo">El agua es más extraña de lo que crees: 6 propiedades que desafían la lógica</div><div class="lista-meta">16 may · 6.8K lecturas</div></div></div>
+        <div class="cats-section">
+          <div class="cats-titulo">Explorar por categoría</div>
+          <div class="cats-grid">
+            <div class="cat-pill" onclick="mostrar('ciencia',null)"><span class="emoji">🔬</span><span>Ciencia</span></div>
+            <div class="cat-pill" onclick="mostrar('historia',null)"><span class="emoji">🏛️</span><span>Historia</span></div>
+            <div class="cat-pill" onclick="mostrar('naturaleza',null)"><span class="emoji">🌿</span><span>Naturaleza</span></div>
+            <div class="cat-pill" onclick="mostrar('tecnologia',null)"><span class="emoji">💻</span><span>Tecnología</span></div>
+            <div class="cat-pill" onclick="mostrar('viral',null)"><span class="emoji">🔥</span><span>Viral</span></div>
+          </div>
+        </div>
+      </main>
+      <aside class="sidebar">
+        <div class="ad-box" style="height:250px"><strong style="color:#ccc;letter-spacing:1px;font-size:11px">ADSENSE 300×250</strong><span>📢 Anuncio sidebar principal</span></div>
+        <div class="sidebar-titulo">🔥 Lo más leído</div>
+        <div class="trending-item" onclick="mostrarArticulo('palabras-arabes')"><div class="trending-num">01</div><div><div class="trending-titulo">10 palabras españolas que vienen del árabe</div><div class="trending-cat">Historia · 15.1K</div></div></div>
+        <div class="trending-item" onclick="mostrarArticulo('flamingo')"><div class="trending-num">02</div><div><div class="trending-titulo">El misterio del flamenco durmiendo con una pata</div><div class="trending-cat">Ciencia · 12.4K</div></div></div>
+        <div class="trending-item" onclick="mostrarArticulo('pulpo')"><div class="trending-num">03</div><div><div class="trending-titulo">El pulpo tiene tres corazones y sangre azul</div><div class="trending-cat">Naturaleza · 11.2K</div></div></div>
+        <div class="trending-item" onclick="mostrarArticulo('ia-voz')"><div class="trending-num">04</div><div><div class="trending-titulo">La IA predice tu estado de ánimo con tu voz</div><div class="trending-cat">Tecnología · 9.8K</div></div></div>
+        <div class="trending-item" onclick="mostrarArticulo('espana-1826')"><div class="trending-num">05</div><div><div class="trending-titulo">Cómo vivía un español hace 200 años</div><div class="trending-cat">Historia · 7.9K</div></div></div>
+        <div class="newsletter" style="margin-top:24px">
+          <h4>📬 Newsletter gratis</h4>
+          <p>Recibe las mejores curiosidades cada mañana</p>
+          <input type="email" placeholder="tu@email.com">
+          <button>Suscribirme →</button>
+        </div>
+        <div class="ad-box" style="height:200px;margin-top:24px"><strong style="color:#ccc;font-size:11px;letter-spacing:1px">ADSENSE 300×200</strong><span>📢 Segundo anuncio sidebar</span></div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- ARTÍCULO INDIVIDUAL (plantilla) -->
+  <div id="articulo" class="pagina">
+    <div style="max-width:720px">
+      <div id="art-cat" class="categoria-tag" style="margin-bottom:12px"></div>
+      <h1 id="art-titulo" class="pagina" style="display:block;padding:0;margin-bottom:8px"></h1>
+      <div class="meta" style="margin-bottom:20px" id="art-meta"></div>
+      <div id="art-img" style="height:300px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:80px;margin-bottom:24px"></div>
+      <div id="art-cuerpo"></div>
+      <div class="ad-inline">📢 Anuncio Google AdSense — Banner en artículo (muy rentable)</div>
+      <div id="art-extra"></div>
+      <div style="margin-top:32px;padding-top:16px;border-top:1px solid var(--borde)">
+        <button onclick="mostrar('inicio',null)" style="background:var(--rojo);color:white;border:none;padding:10px 20px;border-radius:4px;cursor:pointer;font-size:14px">← Volver al inicio</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- CIENCIA -->
+  <div id="ciencia" class="pagina">
+    <h1>🔬 Ciencia</h1>
+    <p class="subtitulo">Los descubrimientos y curiosidades científicas más sorprendentes</p>
+    <div class="articulos-grid">
+      <div class="articulo-card" onclick="mostrarArticulo('flamingo')"><div class="card-img" style="background:#fde8e8">🦩</div><div class="card-body"><div class="card-cat">Ciencia</div><div class="card-titulo">El misterio del flamenco durmiendo con una sola pata</div><div class="card-meta">13 may 2026</div></div></div>
+      <div class="articulo-card" onclick="mostrarArticulo('suenos')"><div class="card-img" style="background:#e8daef">🧠</div><div class="card-body"><div class="card-cat">Ciencia</div><div class="card-titulo">Por qué tu cerebro olvida los sueños a los 10 minutos</div><div class="card-meta">9 may 2026</div></div></div>
+    </div>
+  </div>
+
+  <!-- HISTORIA -->
+  <div id="historia" class="pagina">
+    <h1>🏛️ Historia</h1>
+    <p class="subtitulo">Viajes al pasado que cambian cómo ves el presente</p>
+    <div class="articulos-grid">
+      <div class="articulo-card" onclick="mostrarArticulo('palabras-arabes')"><div class="card-img" style="background:#fdebd0">📜</div><div class="card-body"><div class="card-cat">Historia</div><div class="card-titulo">10 palabras españolas que vienen del árabe</div><div class="card-meta">10 may 2026</div></div></div>
+      <div class="articulo-card" onclick="mostrarArticulo('espana-1826')"><div class="card-img" style="background:#fdedec">🕯️</div><div class="card-body"><div class="card-cat">Historia</div><div class="card-titulo">Cómo vivía un español hace exactamente 200 años</div><div class="card-meta">6 may 2026</div></div></div>
+    </div>
+  </div>
+
+  <!-- TECNOLOGÍA -->
+  <div id="tecnologia" class="pagina">
+    <h1>💻 Tecnología</h1>
+    <p class="subtitulo">La tecnología que está cambiando nuestro mundo</p>
+    <div class="articulos-grid">
+      <div class="articulo-card" onclick="mostrarArticulo('ia-voz')"><div class="card-img" style="background:#d6eaf8">🤖</div><div class="card-body"><div class="card-cat">Tecnología</div><div class="card-titulo">La IA predice tu estado de ánimo con 3 segundos de voz</div><div class="card-meta">11 may 2026</div></div></div>
+    </div>
+  </div>
+
+  <!-- NATURALEZA -->
+  <div id="naturaleza" class="pagina">
+    <h1>🌿 Naturaleza</h1>
+    <p class="subtitulo">El mundo natural que nos rodea y sus secretos</p>
+    <div class="articulos-grid">
+      <div class="articulo-card" onclick="mostrarArticulo('arbol')"><div class="card-img" style="background:#d5f5e3">🌳</div><div class="card-body"><div class="card-cat">Naturaleza</div><div class="card-titulo">El árbol de 9.500 años que nadie sabía que existía</div><div class="card-meta">12 may 2026</div></div></div>
+      <div class="articulo-card" onclick="mostrarArticulo('pulpo')"><div class="card-img" style="background:#e8f8f5">🐙</div><div class="card-body"><div class="card-cat">Naturaleza</div><div class="card-titulo">El pulpo tiene tres corazones y sangre azul</div><div class="card-meta">7 may 2026</div></div></div>
+    </div>
+  </div>
+
+  <!-- VIRAL -->
+  <div id="viral" class="pagina">
+    <h1>🔥 Viral</h1>
+    <p class="subtitulo">Lo que todo el mundo está leyendo ahora mismo</p>
+    <div class="articulos-grid">
+      <div class="articulo-card" onclick="mostrarArticulo('luna')"><div class="card-img" style="background:#fef9e7">🌙</div><div class="card-body"><div class="card-cat">Viral</div><div class="card-titulo">Las 5 curiosidades sobre la Luna que te dejarán sin palabras</div><div class="card-meta">8 may 2026</div></div></div>
+    </div>
+  </div>
+
+  <!-- CONTACTO -->
+  <div id="contacto" class="pagina">
+    <h1>Contacto</h1>
+    <p class="subtitulo">¿Tienes alguna curiosidad que quieras compartir o quieres colaborar?</p>
+    <div class="articulo-completo">
+      <p>En <strong>CuriosMundo</strong> siempre estamos buscando nuevas curiosidades y colaboradores. Si tienes una historia interesante, has descubierto algo sorprendente o quieres proponer una colaboración, escríbenos.</p>
+      <h2>📧 Email de contacto</h2>
+      <p><strong>hola@curiosmundo.es</strong> (cambia esto por tu email real)</p>
+      <h2>📢 Publicidad</h2>
+      <p>Si quieres anunciarte en CuriosMundo más allá de AdSense, contáctanos para tarifas personalizadas.</p>
+      <h2>✍️ Colaboraciones</h2>
+      <p>Aceptamos artículos de colaboradores. Los artículos deben ser originales, en español, de mínimo 600 palabras y sobre curiosidades verificadas.</p>
+    </div>
+  </div>
+
+  <!-- PRIVACIDAD -->
+  <div id="privacidad" class="pagina">
+    <h1>Política de Privacidad</h1>
+    <p class="subtitulo">Última actualización: 13 de mayo de 2026</p>
+    <div class="articulo-completo">
+      <h2>1. Responsable del tratamiento</h2>
+      <p>CuriosMundo es responsable del tratamiento de los datos personales recopilados a través de este sitio web.</p>
+      <h2>2. Datos que recopilamos</h2>
+      <p>Recopilamos datos de navegación a través de Google Analytics (de forma anónima) y, si decides suscribirte a nuestra newsletter, tu dirección de email.</p>
+      <h2>3. Publicidad</h2>
+      <p>Este sitio utiliza Google AdSense para mostrar anuncios. Google puede usar cookies para personalizar los anuncios que ves según tus intereses. Puedes gestionar tus preferencias en <a href="https://adssettings.google.com" target="_blank" style="color:var(--rojo)">adssettings.google.com</a>.</p>
+      <h2>4. Cookies</h2>
+      <p>Utilizamos cookies propias (funcionamiento del sitio) y de terceros (Google Analytics, Google AdSense). Puedes desactivarlas en la configuración de tu navegador.</p>
+      <h2>5. Tus derechos</h2>
+      <p>Tienes derecho a acceder, rectificar o suprimir tus datos. Contáctanos en hola@curiosmundo.es para ejercer estos derechos.</p>
+      <h2>6. Cambios en esta política</h2>
+      <p>Nos reservamos el derecho de modificar esta política. Los cambios se publicarán en esta misma página.</p>
+    </div>
+  </div>
+
+</div><!-- fin contenedor -->
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Curios<span>Mundo</span></div>
+      <p class="footer-desc">El portal de noticias y curiosidades más entretenido en español. Descubre cada día algo nuevo sobre ciencia, historia, naturaleza y tecnología.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Secciones</h5>
+      <a href="#" onclick="mostrar('ciencia',null)">Ciencia</a>
+      <a href="#" onclick="mostrar('historia',null)">Historia</a>
+      <a href="#" onclick="mostrar('tecnologia',null)">Tecnología</a>
+      <a href="#" onclick="mostrar('naturaleza',null)">Naturaleza</a>
+      <a href="#" onclick="mostrar('viral',null)">Viral</a>
+    </div>
+    <div class="footer-col">
+      <h5>El sitio</h5>
+      <a href="#" onclick="mostrar('contacto',null)">Contacto</a>
+      <a href="#" onclick="mostrar('privacidad',null)">Política de privacidad</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 CuriosMundo · Todos los derechos reservados</span>
+    <span>Hecho con ❤️ en España</span>
+  </div>
+</footer>
+
+<script>
+// FECHA AUTOMÁTICA
+const dias = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
+const meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+const hoy = new Date();
+document.getElementById('fecha-hoy').textContent = dias[hoy.getDay()] + ', ' + hoy.getDate() + ' de ' + meses[hoy.getMonth()] + ' de ' + hoy.getFullYear();
+
+// NAVEGACIÓN
+function mostrar(id, enlace) {
+  document.querySelectorAll('.pagina').forEach(p => p.classList.remove('activa'));
+  document.querySelectorAll('nav a').forEach(a => a.classList.remove('activo'));
+  const pag = document.getElementById(id);
+  if(pag) { pag.classList.add('activa'); window.scrollTo(0,0); }
+  if(enlace) enlace.classList.add('activo');
+}
+
+// ARTÍCULOS
+const articulos = {
+  'animales-dormidos': {
+    cat:'Ciencia', titulo:'Los animales que duermen de formas que no te puedes imaginar',
+    meta:'✍️ Ana Martínez &nbsp;·&nbsp; 📅 14 may 2026 &nbsp;·&nbsp; 👁️ 7.200 lecturas',
+    img:'🐬', imgBg:'#d6eaf8',
+    cuerpo:`<p>Dormir parece algo universal, pero la forma en que los animales descansan es tan variada y sorprendente que cuesta creer que estemos hablando del mismo proceso biológico. Desde delfines que duermen con medio cerebro hasta jirafas que solo necesitan 30 minutos al día, el mundo animal nos lleva al límite de lo increíble.</p>
+    <h2>Los delfines duermen con un ojo abierto</h2>
+    <p>Los delfines han desarrollado una habilidad que los neurocientíficos llevan décadas estudiando: el sueño unihemisférico. Básicamente, duermen con la mitad del cerebro mientras la otra mitad sigue activa y consciente. Esto les permite seguir nadando, respirando y vigilando depredadores mientras descansan. Cada cierto tiempo, simplemente cambian qué mitad del cerebro duerme.</p>
+    <h2>Las jirafas duermen solo 30 minutos al día</h2>
+    <p>La jirafa es el mamífero que menos duerme del planeta. Solo necesita entre 30 minutos y 2 horas de sueño profundo al día, repartidos en pequeñas siestas de pocos minutos. La razón es evolutiva: en la sabana, tumbarse significa ser vulnerable a los leones, así que su cuerpo aprendió a necesitar el mínimo posible.</p>
+    <h2>Los caballos duermen de pie</h2>
+    <p>Los caballos tienen un mecanismo llamado aparato de bloqueo en sus patas que les permite dormir de pie sin caerse. Al igual que las jirafas, esta adaptación existe porque en la naturaleza levantarse del suelo lleva tiempo, y ese tiempo puede costar la vida.</p>
+    <h2>Las nutrias se agarran de la mano para no separarse</h2>
+    <p>Las nutrias marinas duermen flotando en el agua. Para no alejarse unas de otras mientras duermen, las parejas y grupos familiares se agarran de la mano formando pequeñas balsas. Es uno de los comportamientos animales más tiernos documentados por la ciencia.</p>
+    <h2>Los pájaros vencejos duermen volando</h2>
+    <p>El vencejo común puede pasar hasta diez meses seguidos en el aire sin tocar tierra. Duerme, come y se reproduce en pleno vuelo. Los estudios con GPS han demostrado que durante la noche ascienden a gran altura y planean mientras duermen, aprovechando las corrientes de aire.</p>`
+  },
+  'curiosidades-espana': {
+    cat:'Historia', titulo:'7 curiosidades de España que la mayoría de españoles desconoce',
+    meta:'✍️ Carlos Ruiz &nbsp;·&nbsp; 📅 14 may 2026 &nbsp;·&nbsp; 👁️ 13.400 lecturas',
+    img:'🏛️', imgBg:'#fdebd0',
+    cuerpo:`<p>Vivimos en uno de los países con más historia del mundo, pero hay datos sobre España que sorprenden incluso a los españoles de toda la vida. Aquí van siete que probablemente no conocías.</p>
+    <h2>1. España produce el 40% del aceite de oliva mundial</h2>
+    <p>Andalucía alberga más de 300 millones de olivos, convirtiéndose en la región con mayor concentración de olivos del planeta. España produce aproximadamente el 40% de todo el aceite de oliva que se consume en el mundo.</p>
+    <h2>2. El himno nacional español no tiene letra</h2>
+    <p>La Marcha Real española es uno de los cuatro himnos nacionales del mundo que no tienen letra oficial. Ha habido varios intentos a lo largo de la historia de añadirle un texto, pero ninguno ha prosperado definitivamente.</p>
+    <h2>3. La primera novela moderna es española</h2>
+    <p>El Quijote de Cervantes, publicado en 1605, es considerado por la crítica literaria internacional como la primera novela moderna de la historia occidental. Fue traducida antes que ninguna otra obra literaria española.</p>
+    <h2>4. España tiene más de 50 sitios Patrimonio de la Humanidad</h2>
+    <p>Con más de 50 sitios declarados Patrimonio de la Humanidad por la UNESCO, España está entre los cinco primeros países del mundo en este ranking, por delante de países como Francia o Reino Unido.</p>
+    <h2>5. El español es la segunda lengua materna más hablada</h2>
+    <p>Con más de 500 millones de hablantes nativos, el español solo es superado por el chino mandarín. Es el idioma oficial de 21 países y se calcula que en 2050 Estados Unidos será el país con más hispanohablantes del mundo.</p>
+    <h2>6. La paella original no lleva marisco</h2>
+    <p>La paella valenciana original lleva pollo, conejo, judías verdes y garrofón. La versión con marisco es una adaptación posterior. Los valencianos consideran que añadir chorizo a la paella es casi un insulto histórico.</p>
+    <h2>7. Madrid tiene el metro más grande de Europa</h2>
+    <p>El metro de Madrid es considerado uno de los mejores de Europa. Con más de 300 km de vías, es el cuarto más largo del mundo y destaca por su frecuencia de paso y modernización.</p>`
+  },
+  'cerebro-increible': {
+    cat:'Ciencia', titulo:'10 cosas increíbles que hace tu cerebro sin que te des cuenta',
+    meta:'✍️ Laura Torres &nbsp;·&nbsp; 📅 15 may 2026 &nbsp;·&nbsp; 👁️ 9.600 lecturas',
+    img:'🧠', imgBg:'#e8daef',
+    cuerpo:`<p>Tu cerebro trabaja sin descanso, procesando millones de datos por segundo mientras tú simplemente vives tu vida. Pero algunas de las cosas que hace en silencio son tan sorprendentes que merecen ser contadas.</p>
+    <h2>1. Completa imágenes que no existen</h2>
+    <p>Tienes un punto ciego en cada ojo donde el nervio óptico se conecta a la retina. Tu cerebro inventa la información que falta basándose en lo que hay alrededor. Estás viendo una realidad parcialmente fabricada todo el tiempo.</p>
+    <h2>2. Tarda 80 milisegundos en procesar lo que ves</h2>
+    <p>Lo que crees que estás viendo ahora mismo ocurrió hace 80 milisegundos. Tu cerebro necesita ese tiempo para procesar la señal visual. Técnicamente, siempre estás viviendo ligeramente en el pasado.</p>
+    <h2>3. Borra recuerdos mientras duermes</h2>
+    <p>Durante el sueño, el cerebro no solo consolida recuerdos importantes, sino que activamente elimina conexiones neuronales que considera innecesarias. Es una limpieza nocturna que mantiene el sistema funcionando de forma eficiente.</p>
+    <h2>4. Genera más energía eléctrica que un smartphone</h2>
+    <p>El cerebro humano genera aproximadamente 23 vatios de potencia eléctrica cuando está activo, suficiente para encender una bombilla pequeña. Un smartphone de gama alta consume entre 3 y 6 vatios en uso intensivo.</p>
+    <h2>5. Puede reconocer una cara en 100 milisegundos</h2>
+    <p>Identificar el rostro de alguien conocido le lleva al cerebro apenas una décima de segundo. Existe una región cerebral dedicada exclusivamente al reconocimiento de caras, llamada área fusiforme de la cara.</p>
+    <h2>6. Siente dolor ajeno como propio</h2>
+    <p>Las neuronas espejo se activan tanto cuando realizamos una acción como cuando vemos a otra persona realizarla. Por eso cuando ves a alguien golpearse, sientes un escalofrío: tu cerebro simula el dolor como si te hubiera pasado a ti.</p>
+    <h2>7. Predice el futuro constantemente</h2>
+    <p>Tu cerebro no espera recibir información para procesarla: la anticipa. Funciona más como un sistema predictivo que como uno reactivo, preparando respuestas antes de que ocurran los estímulos.</p>`
+  },
+  'oceano-misterios': {
+    cat:'Naturaleza', titulo:'El 95% del océano sigue sin explorar: qué se esconde en las profundidades',
+    meta:'✍️ María González &nbsp;·&nbsp; 📅 15 may 2026 &nbsp;·&nbsp; 👁️ 11.800 lecturas',
+    img:'🌊', imgBg:'#d6eaf8',
+    cuerpo:`<p>Hemos cartografiado la superficie de Marte con más detalle que el fondo de nuestros propios océanos. El 95% de las profundidades marinas permanece sin explorar, y lo poco que conocemos es suficiente para entender que compartimos el planeta con un mundo completamente desconocido.</p>
+    <h2>La fosa de las Marianas</h2>
+    <p>La fosa de las Marianas alcanza una profundidad de casi 11.000 metros. Si colocáramos el Everest en su interior, su cima quedaría a más de 2 kilómetros bajo el agua. La presión allí es 1.000 veces mayor que en la superficie.</p>
+    <h2>Animales que parecen de otra galaxia</h2>
+    <p>En las profundidades viven criaturas que desafían la imaginación: el pez víbora con dientes tan grandes que no puede cerrar la boca, la medusa inmortal que puede rejuvenecer indefinidamente, o el calamar gigante cuyos ojos son del tamaño de un balón de fútbol.</p>
+    <h2>Vida sin luz solar</h2>
+    <p>En el fondo del océano existen ecosistemas enteros que no dependen de la luz solar. Se alimentan de la energía química de las fumarolas hidrotermales, grietas que expulsan agua a más de 400 grados. Este descubrimiento cambió nuestra comprensión de dónde puede existir la vida.</p>
+    <h2>El gran desconocido</h2>
+    <p>Se estima que el océano alberga entre 700.000 y un millón de especies, de las cuales solo hemos identificado unas 250.000. Cada expedición al fondo marino regresa con especies nunca vistas. El océano profundo es el territorio más desconocido del planeta Tierra.</p>`
+  },
+  'inventos-accidente': {
+    cat:'Viral', titulo:'8 inventos que cambiaron el mundo y nacieron por accidente',
+    meta:'✍️ Pedro Sánchez &nbsp;·&nbsp; 📅 16 may 2026 &nbsp;·&nbsp; 👁️ 14.200 lecturas',
+    img:'💡', imgBg:'#fef9e7',
+    cuerpo:`<p>La historia de la ciencia está llena de momentos en los que un error o una casualidad llevaron a descubrimientos que cambiaron el mundo. Estos son ocho de los más sorprendentes.</p>
+    <h2>1. La penicilina</h2>
+    <p>En 1928, Alexander Fleming volvió de vacaciones y encontró que un hongo había contaminado sus cultivos de bacterias. En lugar de tirarlos, notó que alrededor del hongo no había bacterias. Ese hongo producía la penicilina, el antibiótico que ha salvado más vidas en la historia de la humanidad.</p>
+    <h2>2. El microondas</h2>
+    <p>En 1945, el ingeniero Percy Spencer estaba trabajando con un magnetrón cuando notó que la chocolatina que llevaba en el bolsillo se había derretido. Intrigado, puso palomitas delante del dispositivo. Nacía así el horno microondas.</p>
+    <h2>3. El velcro</h2>
+    <p>En 1941, el ingeniero suizo George de Mestral volvió de un paseo con sus pantalones llenos de bardanas. En lugar de irritarse, las estudió al microscopio. Ocho años después, patentó el velcro.</p>
+    <h2>4. Las notas Post-it</h2>
+    <p>En 1968, Spencer Silver intentaba crear un adhesivo muy fuerte. El resultado fue un pegamento débil que apenas se adhería. Nadie supo qué hacer con él durante años, hasta que un compañero lo usó para pegar marcadores en su libro. Así nacieron los Post-it.</p>
+    <h2>5. La Coca-Cola</h2>
+    <p>John Pemberton la creó en 1886 como medicamento para dolores de cabeza. Un día, un empleado mezcló el jarabe con agua carbonatada en lugar de agua normal. El resultado gustó tanto que así se quedó.</p>
+    <h2>6. Los rayos X</h2>
+    <p>Wilhelm Röntgen estaba experimentando con tubos en 1895 cuando notó que una pantalla al otro lado del laboratorio brillaba. Al poner su mano delante, vio los huesos. La radiología médica nació ese día.</p>
+    <h2>7. El teflón</h2>
+    <p>Roy Plunkett buscaba un nuevo refrigerante en 1938 cuando uno de sus compuestos se solidificó en el cilindro. Al analizarlo, descubrió que era extremadamente resbaladizo y resistente al calor. Era el teflón, hoy en millones de sartenes.</p>
+    <h2>8. Las patatas fritas</h2>
+    <p>En 1853, el chef George Crum tenía un cliente que devolvía sus patatas por ser demasiado gruesas. Harto, Crum las cortó tan finas que era imposible comerlas con tenedor. El cliente las adoró. Habían nacido las patatas chips.</p>`
+  },
+  'agua-curiosidades': {
+    cat:'Ciencia', titulo:'El agua es más extraña de lo que crees: 6 propiedades que desafían la lógica',
+    meta:'✍️ Isabel Moreno &nbsp;·&nbsp; 📅 16 may 2026 &nbsp;·&nbsp; 👁️ 6.800 lecturas',
+    img:'💧', imgBg:'#d6eaf8',
+    cuerpo:`<p>El agua es la sustancia más común de nuestro planeta y la más estudiada por la ciencia. Y sin embargo, sigue siendo profundamente misteriosa. Tiene más de 70 propiedades anómalas que los científicos aún no han explicado del todo.</p>
+    <h2>1. El hielo flota, y eso es rarísimo</h2>
+    <p>En casi todas las sustancias del universo, el estado sólido es más denso que el líquido y se hunde. El agua es una excepción extraordinaria: cuando se congela, sus moléculas forman una estructura que ocupa más espacio, haciéndola menos densa. Si no fuera así, los lagos se congelarían de abajo arriba y la vida acuática sería imposible.</p>
+    <h2>2. El agua caliente puede congelarse antes que la fría</h2>
+    <p>El efecto Mpemba describe un fenómeno contraintuitivo: en determinadas condiciones, el agua caliente se congela más rápido que el agua fría. Aristóteles ya lo observó hace 2.300 años, pero la ciencia moderna aún no tiene consenso sobre por qué ocurre.</p>
+    <h2>3. Puede existir líquida por encima de 100 grados</h2>
+    <p>El punto de ebullición del agua es 100°C solo a nivel del mar. En la cima del Everest, hierve a unos 70°C. Y en las fumarolas del fondo del océano, bajo enorme presión, el agua permanece líquida a más de 400°C.</p>
+    <h2>4. Una molécula de agua puede tener miles de años</h2>
+    <p>Las moléculas de agua no se crean ni se destruyen en el ciclo del agua. El agua que bebiste hoy pudo haber sido lluvia en la época de los dinosaurios o parte de un río en el Imperio Romano.</p>
+    <h2>5. El agua pura no conduce la electricidad</h2>
+    <p>Contrariamente a lo que mucha gente cree, el agua pura es un aislante eléctrico. Lo que conduce la electricidad son las sales minerales y otras impurezas disueltas en ella.</p>
+    <h2>6. Tiene propiedades que aún desconciertan a los científicos</h2>
+    <p>Algunos investigadores han propuesto que el agua es capaz de conservar características relacionadas con sustancias con las que ha estado en contacto. La comunidad científica sigue debatiendo activamente esta cuestión.</p>`
+  },
+  'records-mundo': {
+    cat:'Viral', titulo:'Los récords más absurdos del mundo que son completamente reales',
+    meta:'✍️ Rosa Jiménez &nbsp;·&nbsp; 📅 17 may 2026 &nbsp;·&nbsp; 👁️ 18.300 lecturas',
+    img:'🏆', imgBg:'#fdebd0',
+    cuerpo:`<p>El Libro Guinness de los Récords lleva décadas documentando los límites de lo humano. Entre los récords de velocidad y resistencia, hay una categoría especial: los completamente absurdos que alguien, en algún lugar del mundo, decidió que valía la pena intentar.</p>
+    <h2>Más camisetas puestas a la vez</h2>
+    <p>El récord actual es de 260 camisetas puestas simultáneamente. El intento duró varias horas y requirió un equipo de ayudantes para ir metiendo cada prenda. Al final, el participante medía el doble de ancho que al empezar.</p>
+    <h2>La pizza más grande de la historia</h2>
+    <p>En 2012, en Roma, se preparó una pizza de 1.261 metros cuadrados de superficie. Para hacerla se usaron 8.800 kg de harina, 5.000 kg de tomate y 3.600 kg de mozzarella.</p>
+    <h2>El maratón más lento de la historia</h2>
+    <p>Shizo Kanakuri tardó 54 años, 8 meses, 6 días, 5 horas, 32 minutos y 20 segundos en completar el maratón olímpico de Estocolmo de 1912. Abandonó agotado, volvió a Japón sin avisar y completó el recorrido simbólicamente en 1967 cuando fue invitado a volver a Suecia.</p>
+    <h2>Más personas disfrazadas de gorila</h2>
+    <p>En Londres, 1.061 personas corrieron una carrera de 8 kilómetros disfrazadas de gorila para recaudar fondos para la conservación. Es el récord oficial de mayor concentración de personas con este disfraz.</p>
+    <h2>El sonido de nudillos más largo</h2>
+    <p>Existe un récord oficial por crujirse los nudillos de forma continua. El actual récord lo tiene un hombre que mantuvo el sonido durante más de 8 horas seguidas, supervisado por médicos que confirmaron que no sufrió daño articular.</p>`
+  },
+
+  'flamingo': {
+    cat:'Ciencia', titulo:'El misterio de por qué los flamencos duermen con una sola pata finalmente resuelto',
+    meta:'✍️ Ana Martínez &nbsp;·&nbsp; 📅 13 may 2026 &nbsp;·&nbsp; 👁️ 12.400 lecturas',
+    img:'🦩', imgBg:'#fde8e8',
+    cuerpo:`<p>Durante décadas, la imagen del flamenco rosa apoyado sobre una sola pata ha generado todo tipo de teorías. La más extendida sostenía que los flamencos adoptaban esta postura para reducir la pérdida de calor corporal, algo similar a lo que hacen algunos mamíferos árticos. Sin embargo, una investigación publicada en la revista Biology Letters ha dado una respuesta completamente diferente.</p>
+    <h2>La verdadera razón</h2>
+    <p>Los científicos Matthew Anderson y Sarah Williams, de la Universidad de Georgia, descubrieron que los flamencos son capaces de mantener la postura de una sola pata incluso cuando están dormidos profundamente. Esto eliminó de inmediato la hipótesis del esfuerzo muscular consciente.</p>
+    <p>La clave está en un mecanismo de bloqueo pasivo en las articulaciones de las patas. Cuando el flamenco adopta esta postura, sus tendones y ligamentos se "encajan" de tal forma que mantienen el equilibrio sin ningún gasto energético adicional. Es similar a como funciona una bisagra que se queda fija en una posición.</p>
+    <h2>Un dato que sorprende</h2>
+    <p>Lo más llamativo del estudio es que los flamencos son más estables sobre una pata que sobre dos. Los investigadores midieron el balanceo corporal y descubrieron que cuando descansan sobre ambas patas, el movimiento oscilante es mayor que cuando usan solo una. En otras palabras: equilibrarse sobre una sola pata les resulta más cómodo que hacerlo sobre dos.</p>
+    <p>Esta curiosidad animal es solo un ejemplo de cómo la naturaleza encuentra soluciones elegantes a problemas aparentemente complejos. La próxima vez que veas un flamenco en esa postura característica, recuerda que no está haciendo ningún esfuerzo: está en su posición más cómoda y eficiente.</p>`
+  },
+  'palabras-arabes': {
+    cat:'Historia', titulo:'10 palabras españolas que usamos a diario y vienen del árabe',
+    meta:'✍️ Carlos Ruiz &nbsp;·&nbsp; 📅 10 may 2026 &nbsp;·&nbsp; 👁️ 15.100 lecturas',
+    img:'📜', imgBg:'#fdebd0',
+    cuerpo:`<p>El español tiene una deuda enorme con el árabe. Durante casi ocho siglos de presencia árabe en la Península Ibérica, miles de palabras pasaron al castellano que hoy hablamos sin saberlo. Estas son 10 de las más sorprendentes.</p>
+    <h2>1. Ojalá</h2>
+    <p>Probablemente la más famosa. Viene directamente del árabe "law sha Allah", que significa "si Dios quiere". La pronunciamos cientos de veces al año sin imaginar su origen.</p>
+    <h2>2. Almohada</h2>
+    <p>Del árabe "al-mikhaddah", que significa exactamente lo mismo: la pieza donde apoyamos la cabeza para dormir.</p>
+    <h2>3. Azúcar</h2>
+    <p>Del árabe "al-sukkar", que a su vez viene del sánscrito. Los árabes fueron quienes introdujeron el cultivo de la caña de azúcar en la península.</p>
+    <h2>4. Alcalde</h2>
+    <p>De "al-qadi", el juez o gobernante local en las comunidades árabes medievales. Hoy es el máximo cargo municipal en España.</p>
+    <h2>5. Naranja</h2>
+    <p>Del árabe "naranj", que los árabes trajeron de Persia e introdujeron en Europa. La fruta y su nombre llegaron juntos.</p>
+    <h2>Y cinco más...</h2>
+    <p>Aceite (al-zayt), acequia (al-saqiya), cifra (sifr, que también nos dio el "cero"), taza (tassah) y hasta la palabra "hasta" tiene raíces árabes según algunos filólogos. El español es un idioma profundamente mestizo, y eso lo hace más rico.</p>`
+  },
+  'ia-voz': {
+    cat:'Tecnología', titulo:'La IA ya puede predecir tu estado de ánimo con solo 3 segundos de tu voz',
+    meta:'✍️ Laura Torres &nbsp;·&nbsp; 📅 11 may 2026 &nbsp;·&nbsp; 👁️ 9.800 lecturas',
+    img:'🤖', imgBg:'#d6eaf8',
+    cuerpo:`<p>Un equipo de investigadores del MIT ha desarrollado un sistema de inteligencia artificial capaz de determinar el estado emocional de una persona analizando únicamente tres segundos de audio de su voz. El sistema, llamado EmoVoice, no necesita entender el contenido de lo que dice la persona: solo analiza el tono, la cadencia, la velocidad y las microfluctuaciones en la frecuencia de la voz.</p>
+    <h2>¿Cómo funciona?</h2>
+    <p>EmoVoice fue entrenado con más de 200.000 muestras de voz etiquetadas con ocho estados emocionales diferentes: alegría, tristeza, enfado, miedo, sorpresa, disgusto, calma y ansiedad. El modelo alcanza una precisión del 87% en condiciones de laboratorio.</p>
+    <h2>Aplicaciones y controversia</h2>
+    <p>Las aplicaciones potenciales son enormes: desde sistemas de atención al cliente que detecten clientes frustrados, hasta herramientas de salud mental que alerten a médicos cuando un paciente muestra señales de depresión. Sin embargo, la tecnología ya está generando debate ético, especialmente en relación con su posible uso en entornos laborales o por parte de gobiernos.</p>
+    <p>La Unión Europea ya está estudiando regular este tipo de sistemas dentro del marco de la Ley de IA, que prohíbe expresamente el reconocimiento de emociones en contextos sensibles sin consentimiento explícito del usuario.</p>`
+  },
+  'arbol': {
+    cat:'Naturaleza', titulo:'El árbol que lleva más de 9.500 años vivo en Suecia y nadie lo sabía',
+    meta:'✍️ María González &nbsp;·&nbsp; 📅 12 may 2026 &nbsp;·&nbsp; 👁️ 6.200 lecturas',
+    img:'🌳', imgBg:'#d5f5e3',
+    cuerpo:`<p>En las montañas de Dalarna, en Suecia, crece un árbol aparentemente insignificante. Es un abeto común, no muy alto, con un aspecto bastante ordinario. Pero en su interior guarda un secreto extraordinario: sus raíces tienen más de 9.500 años de antigüedad, lo que lo convierte en el ser vivo más antiguo del mundo.</p>
+    <h2>Old Tjikko</h2>
+    <p>Se llama Old Tjikko, y fue descubierto en 2004 por el geólogo Leif Kullman, de la Universidad de Umeå. Lo que vemos sobre la superficie es relativamente reciente, pero el sistema de raíces ha sobrevivido durante milenios gracias a un proceso llamado clonación vegetativa: cuando el tronco muere, el sistema radicular genera uno nuevo.</p>
+    <h2>Sobreviviente del hielo</h2>
+    <p>Cuando Old Tjikko comenzó a crecer, los humanos del Paleolítico apenas empezaban a desarrollar la agricultura. El árbol ha sobrevivido glaciaciones, cambios climáticos y la llegada entera de la civilización humana moderna. Los científicos lo encontraron datando muestras de sus raíces con carbono 14, y los resultados los dejaron atónitos.</p>`
+  },
+  'suenos': {
+    cat:'Ciencia', titulo:'Por qué tu cerebro olvida los sueños a los 10 minutos de despertar',
+    meta:'✍️ Pedro Sánchez &nbsp;·&nbsp; 📅 9 may 2026 &nbsp;·&nbsp; 👁️ 8.300 lecturas',
+    img:'🧠', imgBg:'#e8daef',
+    cuerpo:`<p>¿Cuántas veces has despertado con la sensación de haber tenido un sueño muy intenso y, diez minutos después, no recuerdas absolutamente nada? Esto le ocurre prácticamente a todo el mundo, y tiene una explicación neurológica fascinante.</p>
+    <h2>El papel del hipocampo</h2>
+    <p>Los sueños ocurren principalmente durante la fase REM del sueño. Durante esta fase, el hipocampo, que es la región del cerebro responsable de consolidar los recuerdos, está funcionando de manera diferente a cuando estamos despiertos. En lugar de "guardar" la información, procesa y reorganiza recuerdos ya existentes.</p>
+    <h2>La acetilcolina y la noradrenalina</h2>
+    <p>Durante el sueño REM, hay niveles muy bajos de noradrenalina, una sustancia química que es fundamental para la formación de nuevos recuerdos. Sin ella, el cerebro simplemente no puede "grabar" los sueños de forma permanente.</p>
+    <p>Además, al despertar abruptamente o moverse, el cerebro cambia rápidamente a un estado de vigilia que interrumpe cualquier proceso de consolidación que pudiera estar comenzando.</p>
+    <h2>El truco para recordarlos</h2>
+    <p>Los investigadores del sueño recomiendan quedarse quieto al despertar, sin abrir los ojos, y dejar que la mente vague por los últimos fragmentos del sueño antes de moverse. Tener un cuaderno junto a la cama para escribir inmediatamente también aumenta significativamente la capacidad de recordar.</p>`
+  },
+  'luna': {
+    cat:'Astronomía', titulo:'Las 5 curiosidades sobre la Luna que te dejarán sin palabras',
+    meta:'✍️ Isabel Moreno &nbsp;·&nbsp; 📅 8 may 2026 &nbsp;·&nbsp; 👁️ 5.700 lecturas',
+    img:'🌙', imgBg:'#fef9e7',
+    cuerpo:`<p>La Luna es el objeto celeste que más hemos observado a lo largo de la historia humana, pero sigue guardando secretos que sorprenden incluso a los científicos. Aquí van cinco curiosidades que probablemente no conocías.</p>
+    <h2>1. La Luna se aleja 3,8 cm cada año</h2>
+    <p>Debido a la interacción gravitacional con la Tierra, nuestra Luna se aleja lentamente. En la época de los dinosaurios, la Luna estaba mucho más cerca y los días terrestres duraban solo 22 horas.</p>
+    <h2>2. Solo vemos siempre el mismo lado</h2>
+    <p>La Luna rota sobre sí misma exactamente al mismo ritmo que orbita la Tierra, por lo que siempre nos muestra la misma cara. La cara oculta de la Luna no fue fotografiada hasta 1959, por la sonda soviética Luna 3.</p>
+    <h2>3. Tiene "lunamotos"</h2>
+    <p>La Luna tiene actividad sísmica propia, aunque mucho más débil que los terremotos terrestres. Los sismómetros instalados por las misiones Apollo registraron cientos de pequeños seísmos lunares.</p>
+    <h2>4. Su gravedad afecta más que las mareas</h2>
+    <p>La influencia gravitacional de la Luna no solo mueve los océanos: también deforma ligeramente la corteza terrestre sólida hasta 30 centímetros en algunas zonas.</p>
+    <h2>5. Tendría el mismo tamaño que el Sol si estuviera igual de lejos</h2>
+    <p>Es una coincidencia extraordinaria: el Sol es 400 veces más grande que la Luna, pero también está 400 veces más lejos. Por eso, desde la Tierra, ambos parecen exactamente del mismo tamaño, lo que hace posibles los eclipses totales de sol.</p>`
+  },
+  'pulpo': {
+    cat:'Naturaleza', titulo:'El pulpo tiene tres corazones y sangre azul: la guía definitiva',
+    meta:'✍️ Rosa Jiménez &nbsp;·&nbsp; 📅 7 may 2026 &nbsp;·&nbsp; 👁️ 11.200 lecturas',
+    img:'🐙', imgBg:'#e8f8f5',
+    cuerpo:`<p>El pulpo es probablemente el animal más extraño del planeta. No es que sea un poco raro: es radicalmente diferente a casi todo lo que conocemos. Su biología parece diseñada por un autor de ciencia ficción. Vamos a repasar por qué.</p>
+    <h2>Tres corazones</h2>
+    <p>Los pulpos tienen tres corazones. Dos de ellos, llamados corazones branquiales, bombean sangre a través de las branquias para oxigenarla. El tercero, el corazón sistémico, distribuye la sangre oxigenada por el resto del cuerpo. Curiosamente, cuando un pulpo nada activamente, el corazón sistémico deja de latir, lo que explica por qué los pulpos prefieren arrastrarse en lugar de nadar: nadar los cansa mucho.</p>
+    <h2>Sangre azul</h2>
+    <p>En lugar de hemoglobina (que contiene hierro y da color rojo a nuestra sangre), los pulpos usan hemocianina, una proteína que contiene cobre. La hemocianina es azul cuando está oxigenada y transparente cuando no lo está. Esta adaptación les permite vivir en aguas frías y con poco oxígeno.</p>
+    <h2>Nueve cerebros</h2>
+    <p>Técnicamente, los pulpos tienen un cerebro central y ocho "minirebros" distribuidos en cada uno de sus tentáculos. Esto significa que cada tentáculo puede actuar de forma semi-independiente, tomando decisiones locales sin consultar al cerebro central.</p>
+    <h2>No tienen esqueleto</h2>
+    <p>Excepto por el pico (hecho de quitina, similar a las uñas), los pulpos no tienen ninguna parte rígida en su cuerpo. Esto les permite pasar por cualquier abertura del tamaño de su pico, que es apenas unos milímetros. Se han documentado casos de pulpos escapando de acuarios por agujeros que parecían imposibles.</p>`
+  },
+  'espana-1826': {
+    cat:'Historia', titulo:'Cómo vivía un español hace exactamente 200 años: comparativa sorprendente',
+    meta:'✍️ Antonio López &nbsp;·&nbsp; 📅 6 may 2026 &nbsp;·&nbsp; 👁️ 7.900 lecturas',
+    img:'🕯️', imgBg:'#fdedec',
+    cuerpo:`<p>En 1826, España era un país profundamente diferente al que conocemos hoy. No existía la electricidad, no había trenes, y la esperanza de vida rondaba los 35 años. Un viaje a esa España revela un mundo que cuesta imaginar.</p>
+    <h2>La alimentación</h2>
+    <p>La dieta de la mayoría de los españoles de 1826 era monotona y dependía casi exclusivamente de lo que se producía localmente. El pan de centeno o cebada era el alimento base. La carne era un lujo reservado para días especiales. El aceite de oliva, el ajo y las legumbres como los garbanzos y las lentejas eran los protagonistas diarios.</p>
+    <h2>El trabajo</h2>
+    <p>Más del 80% de la población española trabajaba en el campo. Las jornadas de trabajo durante la época de cosecha podían superar las 14 horas. No existía el concepto de fin de semana tal como lo conocemos: se descansaba el domingo por mandato religioso, pero los sábados eran días laborables completos.</p>
+    <h2>La salud</h2>
+    <p>No existían antibióticos ni vacunas masivas. Una herida infectada podía ser mortal. El cólera, la tuberculosis y la viruela eran causas habituales de muerte. Los médicos eran escasos y caros, y en los pueblos pequeños era el barbero quien realizaba pequeñas intervenciones quirúrgicas.</p>
+    <h2>La iluminación</h2>
+    <p>Cuando caía el sol, la vida se detenía para la mayoría. Las velas de sebo eran caras y producían mal olor y poca luz. Las clases populares usaban lámparas de aceite o simplemente se iban a dormir al anochecer. La jornada de vida útil dependía completamente del sol.</p>`
+  }
+};
+
+function mostrarArticulo(id) {
+  const art = articulos[id];
+  if(!art) return;
+  document.getElementById('art-cat').textContent = art.cat;
+  document.getElementById('art-titulo').textContent = art.titulo;
+  document.getElementById('art-meta').innerHTML = art.meta;
+  const img = document.getElementById('art-img');
+  img.textContent = art.img;
+  img.style.background = art.imgBg;
+  document.getElementById('art-cuerpo').innerHTML = art.cuerpo;
+  mostrar('articulo', null);
+}
+</script>
+</body>
+</html>
